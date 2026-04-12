@@ -1,0 +1,25 @@
+.footer {
+  padding: 10px 0 48px;
+}
+
+.inner {
+  display: grid;
+  gap: 8px;
+  padding: 28px clamp(20px, 4vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.brand {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}

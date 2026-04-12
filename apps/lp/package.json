@@ -1,0 +1,33 @@
+{
+  "name": "lp",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@11.10.0",
+  "engines": {
+    "node": ">=20.9.0 <25",
+    "npm": ">=11.10.0 <12"
+  },
+  "volta": {
+    "node": "24.14.1",
+    "npm": "11.10.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "25.5.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.3",
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "typescript": "6.0.2"
+  }
+}

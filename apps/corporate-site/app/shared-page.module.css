@@ -1,0 +1,142 @@
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.sectionSubtle {
+  background: var(--color-bg-subtle);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-family: "Inter", "Geist", "Helvetica Neue", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.sectionDescription {
+  margin: 16px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+}
+
+.sectionCopy {
+  max-width: 720px;
+}
+
+.pageHero {
+  padding-top: calc(var(--header-height) + 56px);
+  padding-bottom: 56px;
+}
+
+.pageKicker {
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin-top: 16px;
+}
+
+.grid2,
+.grid3 {
+  display: grid;
+  gap: 20px;
+}
+
+.grid2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cardBody {
+  padding: clamp(24px, 3vw, 32px);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.cardCopy {
+  margin: 12px 0 0;
+  color: var(--color-text-secondary);
+}
+
+.cardLabel,
+.cardMeta {
+  margin: 0 0 12px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.stack {
+  display: grid;
+  gap: 32px;
+}
+
+.simpleList {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--color-text-secondary);
+}
+
+.detailHero {
+  padding-top: calc(var(--header-height) + 56px);
+  padding-bottom: 40px;
+}
+
+.detailTitle {
+  max-width: 820px;
+  margin: 18px 0 0;
+  font-size: clamp(40px, 6vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.detailStack {
+  display: grid;
+  gap: 24px;
+}
+
+.detailLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.textLink {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+@media (max-width: 820px) {
+  .grid3,
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
