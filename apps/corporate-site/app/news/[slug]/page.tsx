@@ -47,7 +47,7 @@ export default async function NewsDetailPage({ params }: NewsDetailProps) {
             <div className={sharedStyles.cardBody}>
               <h2 className={sharedStyles.cardTitle}>ポイント</h2>
               <ul className={sharedStyles.simpleList}>
-                {post.points.map((point) => (
+                {post.points.map((point: string) => (
                   <li key={point}>{point}</li>
                 ))}
               </ul>

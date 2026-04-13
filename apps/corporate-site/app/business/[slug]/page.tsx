@@ -49,7 +49,7 @@ export default async function BusinessDetailPage({ params }: BusinessDetailProps
             <div className={sharedStyles.cardBody}>
               <h2 className={sharedStyles.cardTitle}>ポイント</h2>
               <ul className={sharedStyles.simpleList}>
-                {item.points.map((point) => (
+                {item.points.map((point: string) => (
                   <li key={point}>{point}</li>
                 ))}
               </ul>

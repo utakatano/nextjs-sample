@@ -51,7 +51,7 @@ export default async function CareerDetailPage({ params }: CareerDetailProps) {
               <div className={sharedStyles.cardBody}>
                 <h2 className={sharedStyles.cardTitle}>ポイント</h2>
                 <ul className={sharedStyles.simpleList}>
-                  {role.points.map((point) => (
+                  {role.points.map((point: string) => (
                     <li key={point}>{point}</li>
                   ))}
                 </ul>
