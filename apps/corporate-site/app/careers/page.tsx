@@ -28,7 +28,7 @@ export default function CareersPage() {
         <div className={`container ${sharedStyles.stack}`}>
           <div className={sharedStyles.grid2}>
             {careerRoles.map((role) => (
-              <Card href={`/careers/${role.slug}`} key={role.slug}>
+              <Card key={role.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardLabel}>{role.team}</p>
                   <h2 className={sharedStyles.cardTitle}>{role.title}</h2>

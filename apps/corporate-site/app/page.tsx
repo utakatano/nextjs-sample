@@ -51,7 +51,7 @@ export default function HomePage() {
           </div>
           <div className={sharedStyles.grid3}>
             {businessItems.map((item) => (
-              <Card href={`/business/${item.slug}`} key={item.slug}>
+              <Card key={item.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardLabel}>{item.category}</p>
                   <h3 className={sharedStyles.cardTitle}>{item.title}</h3>
@@ -69,12 +69,12 @@ export default function HomePage() {
             <p className={sharedStyles.eyebrow}>News</p>
             <h2 className={sharedStyles.sectionTitle}>更新情報も最小限の一覧だけにしています。</h2>
             <p className={sharedStyles.sectionDescription}>
-              カテゴリや本文の情報量を減らし、まずは一覧表示と詳細ページ遷移の基本を追いやすくしています。
+              カテゴリや本文の情報量を減らし、まずは日付付きカード一覧の形を追いやすくしています。
             </p>
           </div>
           <div className={sharedStyles.grid3}>
             {latestNews.map((post) => (
-              <Card href={`/news/${post.slug}`} key={post.slug}>
+              <Card key={post.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardMeta}>{post.date}</p>
                   <h3 className={sharedStyles.cardTitle}>{post.title}</h3>
@@ -97,7 +97,7 @@ export default function HomePage() {
           </div>
           <div className={sharedStyles.grid2}>
             {careerRoles.slice(0, 2).map((role) => (
-              <Card href={`/careers/${role.slug}`} key={role.slug}>
+              <Card key={role.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardLabel}>{role.team}</p>
                   <h3 className={sharedStyles.cardTitle}>{role.title}</h3>

@@ -19,7 +19,7 @@ export default function NewsPage() {
           <span className={sharedStyles.eyebrow}>News</span>
           <h1 className={sharedStyles.detailTitle}>ニュースページも、日付付きカード一覧だけに絞っています。</h1>
           <p className={sharedStyles.pageKicker}>
-            フィルターや注目記事の演出を減らし、一覧表示と詳細遷移の基本だけを追える教材にしています。
+            フィルターや注目記事の演出を減らし、一覧表示そのものを追える教材にしています。
           </p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function NewsPage() {
         <div className={`container ${sharedStyles.stack}`}>
           <div className={sharedStyles.grid3}>
             {sortedPosts.map((post) => (
-              <Card href={`/news/${post.slug}`} key={post.slug}>
+              <Card key={post.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardMeta}>{post.date}</p>
                   <h2 className={sharedStyles.cardTitle}>{post.title}</h2>

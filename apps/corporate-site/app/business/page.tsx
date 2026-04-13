@@ -26,7 +26,7 @@ export default function BusinessPage() {
         <div className={`container ${sharedStyles.stack}`}>
           <div className={sharedStyles.grid3}>
             {businessItems.map((item) => (
-              <Card href={`/business/${item.slug}`} key={item.slug}>
+              <Card key={item.slug}>
                 <div className={sharedStyles.cardBody}>
                   <p className={sharedStyles.cardLabel}>{item.category}</p>
                   <h2 className={sharedStyles.cardTitle}>{item.title}</h2>

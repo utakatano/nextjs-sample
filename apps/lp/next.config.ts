@@ -5,8 +5,10 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
+  output: "export",
   poweredByHeader: false,
   reactStrictMode: true,
+  trailingSlash: true,
   turbopack: {
     root: rootDir,
   },
